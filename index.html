@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <script src="./index.js" type="module"></script>
+    <script src="./services/posts.js" type="module"></script>
+    <script src="./services/comments.js" type="module"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./shared-styles/header.css" />
+    <link rel="stylesheet" href="./shared-styles/loader.css" />
+    <link rel="stylesheet" href="./shared-styles/button.css" />
+    <link rel="stylesheet" href="./shared-styles/modal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="title-wrapper">
+        <h3>JSON Blog</h3>
+      </div>
+    </header>
+
+    <div id="page-content">
+      <div id="posts-wrapper"></div>
+      <div id="loader-wrapper">
+        <div class="loader"></div>
+        <div id="loading-message">Carregando posts...</div>
+      </div>
+      <div>
+        <button id="get-more-button">Carregar mais</button>
+      </div>
+    </div>
+
+    <div id="post-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="post-modal-title"></h3>
+          <img src="./images/close.svg" alt="Fechar modal" id="close-modal" />
+        </div>
+
+        <div id="modal-loader-wrapper">
+          <div class="loader"></div>
+          <div id="loading-message">Carregando cometários...</div>
+        </div>
+
+        <div id="post-modal-content">
+          <div id="creator-infos">
+            <img src="./images/user-black.svg" alt="Foto do usuário" />
+            <p id="modal-content-creator-name"></p>
+            <p id="modal-content-creator-username"></p>
+          </div>
+
+          <p id="modal-content-body"></p>
+
+          <h3 class="comments-title">Comentários</h3>
+          <div id="modal-content-comments"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+#loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#modal-loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #353535;
+}
+
+#loading-message {
+  margin-top: 0.5rem;
+}
+
+.loader {
+  border: 10px solid #d2d2d2;
+  border-top: 10px solid #299c80;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

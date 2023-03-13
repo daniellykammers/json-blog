@@ -1,0 +1,122 @@
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fefefe;
+  margin: 15vh auto;
+  padding: 1rem;
+  width: 60%;
+  border-radius: 8px;
+}
+
+.modal-content p {
+  color: #1d1d1d;
+  font-size: 0.875rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.modal-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #272727;
+}
+
+/* The Close Button */
+.modal-header img {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.modal-header img:hover,
+.modal-header img:focus {
+  opacity: 1;
+}
+
+#post-modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#post-modal-content #creator-infos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 0.5rem;
+}
+
+#post-modal-content #creator-infos img {
+  max-width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.comments-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: black;
+  margin: 1rem 0 0.5rem;
+}
+
+.post-comment-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #e8e8e8;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.post-comment-wrapper .comment-creator-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 0.5rem;
+}
+
+.post-comment-wrapper .comment-creator-info img {
+  max-width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.post-comment-wrapper .comment-creator-info p {
+  font-weight: 600;
+}
+
+#modal-content-creator-name {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+#modal-content-creator-username {
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.post-comment-wrapper p {
+  font-size: 0.75rem;
+}
